@@ -1,0 +1,51 @@
+import 'package:bmi_calculator/model/bmi_provider.dart';
+import 'package:bmi_calculator/styles/my_style.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:provider/provider.dart';
+
+class GenderButtonMale extends StatelessWidget {
+   GenderButtonMale({
+
+    Key? key,
+  }) : super(key: key);
+
+  bool isPressed = false;
+
+
+
+  @override
+  Widget build(BuildContext context) {
+
+    BmiProvider bmiProvider = Provider.of<BmiProvider>(context);
+
+
+
+    return SizedBox(
+        height: 130.h,
+        width: 100.h,
+        child: NeumorphicButton(
+          onPressed: () {
+            isPressed = !isPressed;
+            bmiProvider.setMale(isPressed);
+          },
+          style: !isPressed
+              ? MyStyle.neumorphicBoxStyle
+              : MyStyle.neumorphicPressedBoxStyle,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.male,
+                size: 45.r,
+              ),
+              Text(
+                "Male",
+                style: MyStyle.mediumFontStyle,
+              )
+            ],
+          ),
+        ));
+  }
+}
