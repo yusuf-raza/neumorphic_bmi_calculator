@@ -17,8 +17,8 @@ class GenderButtonFemale extends StatelessWidget {
     BmiProvider bmiProvider = Provider.of<BmiProvider>(context);
 
     return SizedBox(
-        height: 130.h,
-        width: 100.h,
+        height: 150.h,
+        width: 120.h,
         child: NeumorphicButton(
           onPressed: () {
             isPressed = !isPressed;
@@ -31,11 +31,12 @@ class GenderButtonFemale extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(
-                Icons.female,
+                Icons.girl,
                 size: 45.r,
               ),
               Text(
                 "Female",
+
                 style: MyStyle.mediumFontStyle,
               )
             ],

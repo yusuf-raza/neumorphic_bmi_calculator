@@ -13,7 +13,7 @@ class CalculateBmiButton extends StatelessWidget {
       width: 120.w,
       child: NeumorphicButton(
         onPressed: (){},
-        style: MyStyle.neumorphicBoxStyle,
+        style: MyStyle.neumorphicButtonStyle,
         child:  Center(child: Text("Check BMI",style: MyStyle.mediumFontStyle,)),
       ),
     );

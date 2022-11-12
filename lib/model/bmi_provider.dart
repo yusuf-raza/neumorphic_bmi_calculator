@@ -5,9 +5,9 @@ import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 class BmiProvider with ChangeNotifier {
   late bool _isMale;
   late bool _isFemale;
-  late int _weight = 70;
+  late double _weight = 0;
   late double _height = 0;
-  late int _age = 30;
+  late double _age = 0;
   late double _bmi;
 
   bool get isFemale => _isFemale;
@@ -42,6 +42,20 @@ class BmiProvider with ChangeNotifier {
     return _height;
   }
 
+  double setWeight(double value) {
+    _weight = value;
+    //print(_height);
+    notifyListeners();
+    return _weight;
+  }
+
+  double setAge(double value) {
+    _age = value;
+    //print(_height);
+    notifyListeners();
+    return _age;
+  }
+
   void incrementAge() {
     _age++;
     notifyListeners();
@@ -52,7 +66,7 @@ class BmiProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  int get age => _age;
+  double get age => _age;
 
   void incrementWeight() {
     _weight++;
@@ -64,5 +78,5 @@ class BmiProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  int get weight => _weight;
+  double get weight => _weight;
 }

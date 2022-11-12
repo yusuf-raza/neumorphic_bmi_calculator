@@ -23,8 +23,8 @@ class GenderButtonMale extends StatelessWidget {
 
 
     return SizedBox(
-        height: 130.h,
-        width: 100.h,
+        height: 150.h,
+        width: 120.h,
         child: NeumorphicButton(
           onPressed: () {
             isPressed = !isPressed;
@@ -37,7 +37,7 @@ class GenderButtonMale extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(
-                Icons.male,
+                Icons.boy,
                 size: 45.r,
               ),
               Text(
