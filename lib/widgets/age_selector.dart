@@ -36,7 +36,7 @@ class AgeSelector extends StatelessWidget {
                   NeumorphicButton(
                     onPressed: () {
                       HapticFeedback.selectionClick();
-                      bmiProvider.incrementAge();
+                     //bmiProvider.incrementAge();
                     },
                     child: Icon(Icons.add),
                     style: MyStyle.neumorphicButtonStyle,
@@ -44,7 +44,7 @@ class AgeSelector extends StatelessWidget {
                   NeumorphicButton(
                     onPressed: () {
                       HapticFeedback.selectionClick();
-                      bmiProvider.decrementAge();
+                     // bmiProvider.decrementAge();
                     },
                     child: Icon(Icons.remove),
                     style: MyStyle.neumorphicButtonStyle,

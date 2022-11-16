@@ -37,7 +37,7 @@ class WeightSelector extends StatelessWidget {
                   NeumorphicButton(
                     onPressed: () {
                       HapticFeedback.selectionClick();
-                      bmiProvider.incrementWeight();
+                     // bmiProvider.incrementWeight();
                     },
                     style: MyStyle.neumorphicButtonStyle,
                     child: const Icon(Icons.add),
@@ -45,7 +45,7 @@ class WeightSelector extends StatelessWidget {
                   NeumorphicButton(
                     onPressed: () {
                       HapticFeedback.selectionClick();
-                      bmiProvider.decrementWeight();
+                     // bmiProvider.decrementWeight();
                     },
                     style: MyStyle.neumorphicButtonStyle,
                     child: const Icon(Icons.remove),

@@ -21,7 +21,6 @@ class GenderButtonMale extends StatelessWidget {
     BmiProvider bmiProvider = Provider.of<BmiProvider>(context);
 
 
-
     return SizedBox(
         height: 150.h,
         width: 120.h,
@@ -29,6 +28,7 @@ class GenderButtonMale extends StatelessWidget {
           onPressed: () {
             isPressed = !isPressed;
             bmiProvider.setMale(isPressed);
+            //isPressed = !isPressed;
           },
           style: !isPressed
               ? MyStyle.neumorphicBoxStyle
