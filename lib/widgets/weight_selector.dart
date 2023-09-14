@@ -1,7 +1,6 @@
 
 import 'package:bmi_calculator_neumorphic/model/bmi_provider.dart';
 import 'package:bmi_calculator_neumorphic/styles/my_style.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_neumorphic_plus/flutter_neumorphic.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
